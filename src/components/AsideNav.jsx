@@ -3,7 +3,7 @@ import navLinks from '../constants'
 import { NavLink } from 'react-router-dom' ;
 
 export const AsideNav = () => (
-    <aside className="flex flex-column min-w-[300px] h-screen border-2 border-[#000000]">
+    <aside className="md:block hidden flex flex-column min-w-[300px] h-screen border-2 border-[#000000]">
         <div className="w-full flex flex-col justify-between items-center p-4">
             <ul className="list-style-none">
 
@@ -12,7 +12,7 @@ export const AsideNav = () => (
                         <NavLink to={`/${link.id}`}>
                             <li key={index} className={`${ index !== navLinks.length-1 ? 'my-5' : 'my-0'} 
                              border-2 border-black p-3 w-[220px] text-center navLinks duration-300 
-                             rounded-[5px] bg-[#D9D9D9] text-[1.2rem] font-semibold`} 
+                             rounded-[15px] bg-[#D9D9D9] text-[1.2rem] font-semibold`} 
                              
                              onClick={`active`} 
                              activeClassName="active-class">
