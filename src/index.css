@@ -10,9 +10,14 @@
 
 body {
   scroll-behavior: smooth;
-  background-color: #EFEFEF;
+  background-color: #FFFFFF;
 }
 
 .padding-right { 
   padding-right: 10px;
 }
+
+.navLinks:hover {
+  background: #e8e8e8;
+}
+

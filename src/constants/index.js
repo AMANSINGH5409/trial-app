@@ -1,21 +1,26 @@
 
 
-
-export const navLinks = [
+const navLinks = [
     {
         id: "home",
         title: "Home"
     },
     {
-        id: "my_orders",
+        id: "myorders",
         title: "My Orders"
     },
     {
-        id: "login",
-        title: "Login"
+        id: "myfavorites",
+        title: "My Favorites"
     },
     {
-        id: "signup",
-        title: "SignUp"
+        id: "myprofile",
+        title: "My Profile"
+    },
+    {
+        id: "setupstore",
+        title: "SetUp Store"
     },
 ]
+
+export default navLinks ;
