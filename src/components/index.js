@@ -6,6 +6,7 @@ import QuickFilters from "./QuickFilters";
 import Nothing from "./Nothing";
 import MyProfile from "./MyProfile";
 import SetUpStore from "./SetUpStore";
+import Home from "./Home";
 
 export {
     Navbar ,
@@ -16,4 +17,5 @@ export {
     QuickFilters ,
     Nothing ,
     SetUpStore ,
+    Home ,
 }

@@ -1,9 +1,10 @@
 import React from 'react'
-import { MyOrders , MyProfile , SetUpStore , Nothing } from './index';
+import { MyOrders , MyProfile , SetUpStore , Nothing , Home } from './index';
 
 export const MainContent = (props) => {
 
   const componentList =  {
+    'home' : <Home /> ,
     'myorders': <MyOrders /> ,
     'myprofile' : <MyProfile /> ,
     'setupstore' : <SetUpStore /> ,
@@ -11,7 +12,7 @@ export const MainContent = (props) => {
   }
 
   return (
-    <div id='mainContent' className="p-2 border-2 w-full  rounded-[8px] bg-slate-100 drop-shadow">
+    <div id='mainContent' className="p-2 border-2 w-full  rounded-[8px] drop-shadow">
       {componentList[props.load]}
     </div>
   )
