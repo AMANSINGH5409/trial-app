@@ -1,12 +1,10 @@
 import React from 'react'
-import AsideNav from './AsideNav'
 
 const MyOrders = () => {
   return (
 
     <div>
-      <AsideNav />
-      <h1>Hello World</h1>
+      <h1>My Orders</h1>
     </div>
   )
 }

@@ -10,10 +10,6 @@ const navLinks = [
         title: "My Orders"
     },
     {
-        id: "myfavorites",
-        title: "My Favorites"
-    },
-    {
         id: "myprofile",
         title: "My Profile"
     },
