@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { FoodieeWoodiee, google, magnifying_glass, menuOpen, menuClose } from '../assets'
 import './navbar.css'
 import navLinks from '../constants'
-import { NavLink } from 'react-router-dom'
+import SellerButton from './SellerButton'
 
-const Navbar = () => {
+const Navbar = (props) => {
 
   const [toggle, setToggle] = useState(false);
 
@@ -15,7 +15,7 @@ const Navbar = () => {
       </div>
 
       <div className="flex md:flex-row items-center sm:justify-between justify-around">
-      {/* Search bar */}
+        {/* Search bar */}
         <div className="mr-8 relative">
           <img src={magnifying_glass} alt="search" className="absolute top-2.5 left-2" />
           <input type="text" name="search" className="md:min-w-[360px] w-[300px] h-[40px] bg-[#e1e1e1] rounded-[10px] pl-9 text-[18px] font-semibold " placeholder='Search' />
@@ -43,19 +43,21 @@ const Navbar = () => {
           <ul className='list:none'>
             {
               navLinks.map((link, index) => (
-                <NavLink to={`/${link.id}`}>
-                  <li key={index} className={`${index !== navLinks.length - 1 ? 'my-5' : 'my-5'} 
+                <li key={index} className={`${index !== navLinks.length - 1 ? 'my-5' : 'my-5'} 
                                              border-2 border-black p-3 w-[220px] text-center navLinks duration-300 
-                                             rounded-[15px] bg-[#D9D9D9] text-[1.2rem] font-semibold`}
+                                             rounded-[15px] bg-[#D9D9D9] text-[1.2rem] font-semibold ${props.activeComponent === link.id ? "bg-black text-yellow-300" : "bg-[#e1e1e1] text-black"}`}
 
-                    onClick={`active`}
-                    activeClassName="active-class">
-                    {link.title}
-                  </li>
-                </NavLink>
+                  onClick={() => {
+                    props.loadComponent(link.id)
+                    props.showAsActive(link.id)
+                  }}
+                  activeClassName="active-class">
+                  {link.title}
+                </li>
               ))
 
             }
+            <SellerButton />
           </ul>
         </div>
       </div>

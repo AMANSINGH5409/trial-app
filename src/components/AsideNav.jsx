@@ -1,6 +1,5 @@
 import navLinks from '../constants'
-
-
+import SellerButton from './SellerButton'
 
 export const AsideNav = (props) => {
 
@@ -24,36 +23,7 @@ export const AsideNav = (props) => {
                             </li>
                         ))
                     }
-
-                    {/* <NavLink to="/home">
-                    <li className={`my-5 border-2 border-black p-3 w-[220px] text-center navLinks duration-300 
-                             rounded-[5px] bg-[#D9D9D9] text-[1.2rem] font-semibold`}
-
-                        // onClick={`active`}
-                        activeClassName="active-class">
-                        Home
-                    </li>
-                </NavLink>
-
-                <NavLink to="/myorders">
-                    <li className={`my-5 border-2 border-black p-3 w-[220px] text-center navLinks duration-300 
-                             rounded-[5px] bg-[#D9D9D9] text-[1.2rem] font-semibold`}
-
-                        // onClick={`active`}
-                        activeClassName="active-class">
-                        My Orders
-                    </li>
-                </NavLink>
-
-                <NavLink to="/myfavorites">
-                    <li className={`my-5 border-2 border-black p-3 w-[220px] text-center navLinks duration-300 
-                             rounded-[5px] bg-[#D9D9D9] text-[1.2rem] font-semibold`}
-
-                        // onClick={`active`}
-                        activeClassName="active-class">
-                        My Favorites
-                    </li>
-                </NavLink> */}
+                    <SellerButton />
                 </ul>
             </div>
         </aside>

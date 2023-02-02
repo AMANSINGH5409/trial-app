@@ -1,5 +1,5 @@
 import React from "react";
-import { arrow , email , location , agent , smartphone_call } from '../assets'
+import { arrow, email, location, agent, smartphone_call } from '../assets'
 import InputFields from "./InputFields";
 import TextArea from "./TextArea";
 
@@ -11,20 +11,22 @@ const MyProfile = () => {
         My Profile
       </div>
 
-      <div className="content flex items-start">
-        <div className="left w-[70%]">
-          <div className="top flex">
-            <div className="left flex flex-col justify-center font-bold">
+      <div className="content flex items-start flex sm:flex-row flex-col sm:items-start items-center">
+        <div className="w-full">
+          <div className="flex sm:flex-row flex-col ">
+            <div className="left flex flex-col justify-center font-bold items-center">
               <img
                 className="w-36 mt-5 ml-5 mb-2 rounded-xl"
                 src="https://www.pacificfoodmachinery.com.au/media/catalog/product/placeholder/default/no-product-image-400x400_6.png"
               />
-              Click To Change Image
+              <p className="font-semibold ml-5">
+                Click To Change Image
+              </p>
             </div>
-            <div className="right m-5">
+            <div className="right m-5 flex flex-col justify-center items-center">
               <div className="userName text-3xl font-bold">User's Name</div>
               <div className="userId mt-2 text-xl">
-                UserID : hsdcmsdkchcassdcsdcdscsdcsd
+                UserID : hsdcm
               </div>
               <div className="userType mt-5 bg-black w-max text-yellow-300 px-8 py-2 rounded-xl text-lg">
                 Only User / Only Seller / Both
@@ -32,7 +34,7 @@ const MyProfile = () => {
             </div>
           </div>
 
-          <div className="bottom flex flex-col gap-5 items-start mt-10">
+          <div className="bottom flex flex-col gap-5 items-start mt-10 sm:w-full w-[300px] items-center">
             <InputFields
               hint="Email ID"
               placeholder="eg: userXYZ@gmail.com"
@@ -53,10 +55,6 @@ const MyProfile = () => {
             </button>
           </div>
         </div>
-        <button className="flex items-center gap-5 bg-black text-yellow-300 py-5 px-8 rounded-2xl text-2xl">
-          <img src={agent} className='w-10'/>
-          Become a Seller
-        </button>
       </div>
     </div>
   );
