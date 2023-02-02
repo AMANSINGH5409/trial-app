@@ -12,7 +12,7 @@ export const AsideNav = (props) => {
                         navLinks.map((link, index) => (
                             <li key={index} className={`${index !== navLinks.length - 1 ? 'my-5' : 'my-0'} 
                              border-2 border-black p-3 w-[220px] text-center navLinks duration-300 
-                             rounded-[15px] bg-[#e1e1e1] text-[1.2rem] font-semibold hover:bg-black hover:text-yellow-300 cursor-pointer ${props.activeComponent == link.id ? "bg-black text-yellow-300" : "bg-[#e1e1e1] text-black"} `}
+                             rounded-[15px] bg-[#e1e1e1] text-[1.2rem] font-semibold hover:bg-black hover:text-yellow-300 cursor-pointer ${props.activeComponent === link.id ? "bg-black text-yellow-300" : "bg-[#e1e1e1] text-black"} `}
 
                                 onClick={() => {
                                     props.loadComponent(link.id)

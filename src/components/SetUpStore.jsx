@@ -9,7 +9,7 @@ const SetUpStore = () => {
   return (
     <div className="bg-white h-full p-5">
       <div className="heading flex gap-5">
-        <img src={arrow} className="w-8" />
+        <img src={arrow} className="w-8" alt="back" />
         <p className="text-2xl font-bold">SetUp Store</p>
       </div>
       <div className="content flex xl:flex-row flex-col">
@@ -17,6 +17,7 @@ const SetUpStore = () => {
           <img
             className="w-48 m-5 rounded-[50%]"
             src="https://www.pacificfoodmachinery.com.au/media/catalog/product/placeholder/default/no-product-image-400x400_6.png"
+            alt="nothing"
           />
           <p className="text-black font-bold">Set Store Image</p>
         </div>

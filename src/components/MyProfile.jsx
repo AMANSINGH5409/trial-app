@@ -1,5 +1,5 @@
 import React from "react";
-import { arrow, email, location, agent, smartphone_call } from '../assets'
+import { arrow, email, location, smartphone_call } from '../assets'
 import InputFields from "./InputFields";
 import TextArea from "./TextArea";
 
@@ -7,7 +7,7 @@ const MyProfile = () => {
   return (
     <div className="bg-white h-full p-5">
       <div className="heading flex items-center gap-8 text-2xl font-bold">
-        <img src={arrow} className="w-8 cursor-pointer" />
+        <img src={arrow} className="w-8 cursor-pointer" alt="back" />
         My Profile
       </div>
 
@@ -18,6 +18,7 @@ const MyProfile = () => {
               <img
                 className="w-36 mt-5 ml-5 mb-2 rounded-xl"
                 src="https://www.pacificfoodmachinery.com.au/media/catalog/product/placeholder/default/no-product-image-400x400_6.png"
+                alt="image_"
               />
               <p className="font-semibold ml-5">
                 Click To Change Image
