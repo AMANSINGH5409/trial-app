@@ -23,16 +23,16 @@ const HomePage = () => {
       </div>
 
       {/* Main */}
-      <main className="flex justify-between items-start sm:flex-row flex-col">
+      <main className="flex justify-between items-start md:flex-row flex-col">
 
         <div className="w-[350px]">
           <AsideNav loadComponent={loadComponent} showAsActive={showAsActive} activeComponent={activeComponent} />
         </div>
 
-        <div className="flex-1">
+        <div className="flex-1 w-full">
           <MainContent load={component} />
         </div>
-        <div className="flex-2 justfiy-center items-center sm:p-3 p-4">
+        <div className="md:flex-2 justfiy-center items-center sm:p-3 p-4 md:w-[30%] w-full">
           <QuickFilters />
         </div>
       </main>

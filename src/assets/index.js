@@ -16,6 +16,7 @@ import photos from './photos.png'
 import searchIcon from './searchIcon.png'
 import shop from './shop.png'
 import smartphone_call from './smartphone_call.png'
+import food from './food.png'
 
 export {
     FoodieeWoodiee ,
@@ -36,4 +37,5 @@ export {
     searchIcon ,
     shop ,
     smartphone_call ,
+    food ,
 };

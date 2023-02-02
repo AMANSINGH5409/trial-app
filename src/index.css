@@ -21,3 +21,6 @@ body {
   background: #e8e8e8;
 }
 
+.shadow {
+  box-shadow: 5px 6px 10px #000000;
+}
