@@ -12,7 +12,7 @@ export const MainContent = (props) => {
   }
 
   return (
-    <div id='mainContent' className="p-2 border-2 w-full rounded-[8px] drop-shadow">
+    <div id='mainContent' className="p-2 border-2 max-w-full rounded-[8px] drop-shadow">
       {componentList[props.load]}
     </div>
   )
