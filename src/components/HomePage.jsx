@@ -25,7 +25,7 @@ const HomePage = () => {
       {/* Main */}
       <main className="flex justify-between items-start md:flex-row flex-col">
 
-        <div className="w-[350px]">
+        <div className="w-[350px] xl:block hidden">
           <AsideNav loadComponent={loadComponent} showAsActive={showAsActive} activeComponent={activeComponent} />
         </div>
 

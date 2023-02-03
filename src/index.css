@@ -24,3 +24,19 @@ body {
 .shadow {
   box-shadow: 5px 6px 10px #000000;
 }
+
+.dropdown {
+  animation: growDown 300ms ease-in-out forwards ;
+}
+
+@keyframes growDown {
+  0% {
+      transform: scaleY(0)
+  }
+  80% {
+      transform: scaleY(1.1)
+  }
+  100% {
+      transform: scaleY(1)
+  }
+}

@@ -4,7 +4,7 @@ import SellerButton from './SellerButton'
 export const AsideNav = (props) => {
 
     return (
-        <aside className="md:block hidden flex flex-column min-w-[300px] h-screen ">
+        <aside className="flex flex-column min-w-[300px] h-screen ">
             <div className="w-full flex flex-col justify-between items-center p-4">
                 <ul className="list:none">
 
@@ -23,7 +23,6 @@ export const AsideNav = (props) => {
                             </li>
                         ))
                     }
-                    <SellerButton />
                 </ul>
             </div>
         </aside>
